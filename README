@@ -1,0 +1,1 @@
+if you hit submit with an empty field it breaks the app and the only way i know to fix it is to redeploy. make a slight change to this file if you want to redeploy.
