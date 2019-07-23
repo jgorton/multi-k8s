@@ -6,4 +6,11 @@ can make changes here if you want to redeploy/test something.
 	manually downsized GKE cluster size to 0, to minimize/avoid billing.
 	the site is still being served, but nothing can be computed.
 	checking if a redeploy would still pass the build tests and take effect.
-	
+
+	seems like the pages are using caching or something, updates don't seem to take effect.
+	but the page is still visible. interestingly, inside my vm the "cached" version
+	is older than the one i can access on my host machine.
+
+	i upped the cluster to have 1 node, and the sites still did not update. then
+	i put it back to 3 and it began to work as it did originally. indexes seen was
+	recovered but calculated values was reset to empty.
