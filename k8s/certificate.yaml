@@ -1,0 +1,20 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: jamigo-tls
+spec:
+  secretName: jamigo
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: jamigo.us
+  dnsNames:
+    - jamigo.us
+    - www.jamigo.us
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - jamigo.us
+          - www.jamigo.us
