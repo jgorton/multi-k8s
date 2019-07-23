@@ -1,1 +1,9 @@
 this multi-container app has now been refactored to a deployment via kubernetes, not docker
+
+can make changes here if you want to redeploy/test something.
+
+19/7/23:
+	manually downsized GKE cluster size to 0, to minimize/avoid billing.
+	the site is still being served, but nothing can be computed.
+	checking if a redeploy would still pass the build tests and take effect.
+	
